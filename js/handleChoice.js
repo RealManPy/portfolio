@@ -5,9 +5,9 @@ head2Element.addEventListener('click', function (event) {
   const clickX = event.clientX - buttonRect.left;
 
   if (clickX < buttonRect.width / 2) { //Memes
-    window.location.href = "HJd35&%23fjs%5Efvq3wF90qMEMES.html";
+    window.location.href = "memes.html";
 
   } else {  //Quotes
-    window.location.href = "w@%2346%23R%23@etgye457yQUOTES.html";
+    window.location.href = "quotes.html";
   }
 });
