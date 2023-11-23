@@ -64,13 +64,7 @@ footer {
 .picture-area img {
   margin-left: -400px;
 }
-.head1{
-	font-family: arial;
-	text-align: center;
-	color: #FFFFFF;
-	padding: 10px;
-	font-size: 34px;  
-}
+
 .head2 {
     font-size: 30px;
     padding: 10px 10px;
@@ -78,7 +72,6 @@ footer {
     border: none;
     border-radius: 100px;
     cursor: pointer;
-    transition: background-color 0.3s;
     text-decoration: none;
     margin: auto auto;
     width: 35vh;
@@ -98,6 +91,7 @@ footer {
     width: 50%;
     height: 100%;
     background: rgb(56, 77, 156);
+	transition: background-color 0.3s;
     border-radius: 100px 0 0 100px;
 }
 
@@ -109,6 +103,7 @@ footer {
     width: 50%;
     height: 100%;
     background: rgb(26, 47, 126);
+	transition: background-color 0.3s;
     border-radius: 0 100px 100px 0;
 }
 
@@ -123,5 +118,22 @@ footer {
 	height:50px;
 	width:auto;
 }
-
-
+#soundB{
+    font-size: 30px;
+    padding: 10px 10px;
+    margin-top: 80px;
+    border: none;
+    border-radius: 100px;
+	cursor: pointer;
+    text-decoration: none;
+    width: 25vh;
+    height: 4vh;
+    color: #FFFFFF;
+    position: relative;
+	background-color: rgb(46, 57, 136);
+	display: inline-block;
+}
+#soundB:hover{
+	background: rgb(26, 47, 120);
+	transition: background-color 0.3s;
+}

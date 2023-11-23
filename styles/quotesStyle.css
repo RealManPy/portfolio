@@ -92,27 +92,7 @@ hr {
 	margin-top: -20px;
 	margin-bottom: -20px;
 }
-.red {
-	background-color: #FF0000;
-}
-.orange{
-	background-color: #FFA500;
-}
-.yellow{
-	background-color: #FFFF00;
-}
-.green{
-	background-color: #008000;
-}
-.light-blue{
-	background-color: #ADD8E6;
-}
-.blue{
-	background-color: #0000FF;
-}
-.purple{
-	background-color: #800080;
-}
+
 a:visited{
 	color: #FF0000;
 }

@@ -22,4 +22,6 @@ function handleClick(pictureId) {
 		}
         
     }
+    console.log(num1Clicked);
+	console.log(num2Clicked);
 }
