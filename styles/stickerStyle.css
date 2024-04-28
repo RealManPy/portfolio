@@ -1,0 +1,125 @@
+@font-face {
+  font-family: "heb";
+  src: url("os_luizi_round-ffc-web.woff");
+}
+
+body {
+  font-size: 20px;
+  background-color: #E4F4F4;
+  font-family: arial;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+header {
+  font-family: arial;
+  background-color: #4F5FFF;
+  color: #fff;
+  padding: 0;
+  box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.2);
+}
+
+h1 {
+  font-size: 70px;
+  text-align: center;
+}
+
+.s {
+  font-size: 60px;
+}
+
+
+main {
+  flex: 1;
+  padding: 20px;
+  text-align: center;
+}
+
+
+
+footer {
+  font-size: 20px;
+  background-color: #4F5FFF;
+  color: #fff;
+  padding: 10px;
+  text-align: center;
+  margin-top: auto;
+  font-family: arial;
+}
+
+
+.head1{
+	font-family: arial;
+	text-align: center;
+	color: #FFFFFF;
+	padding: 10px;
+	font-size: 34px;  
+}
+.head2 {
+    font-size: 30px;
+    padding: 10px 10px;
+    margin-top: 0px;
+    border: none;
+    border-radius: 100px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    text-decoration: none;
+    margin: auto auto;
+    width: 35vh;
+    height: 4vh;
+    background-size: 200% 100%;
+    background-position: right;
+    color: #FFFFFF;
+    text-align: center;
+    position: relative;
+}
+
+
+#homeButton img{
+	height:75px;
+	width:auto;
+	text-align: right;
+	display: inline-block;
+}
+img {
+	width: 800px;
+}
+.main{
+	width:50vh;
+}
+.content{
+	text-align: center;
+	font-family: heb;
+}
+hr {
+	background-color: black;
+	height: 3px;
+	margin-top: -5px;
+	margin-bottom: 3px;
+	width: 150vh;
+}
+a:visited{
+	color: #FF0000;
+}
+
+.btn {
+  background-color: DodgerBlue;
+  border: none;
+  color: white;
+  padding: 12px 30px;
+  cursor: pointer;
+  font-size: 40px;
+  width: 300px;
+}
+
+
+.btn:hover {
+  background-color: RoyalBlue;
+}
+
+.pic {
+	width: 300px;
+}

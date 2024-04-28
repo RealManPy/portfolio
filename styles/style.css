@@ -118,7 +118,7 @@ footer {
 	height:50px;
 	width:auto;
 }
-#soundB{
+.but{
     font-size: 30px;
     padding: 10px 10px;
     margin-top: 80px;
@@ -133,7 +133,7 @@ footer {
 	background-color: rgb(46, 57, 136);
 	display: inline-block;
 }
-#soundB:hover{
+.but:hover{
 	background: rgb(26, 47, 120);
 	transition: background-color 0.3s;
 }
