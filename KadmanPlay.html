@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>שחקו עם קדמן</title>
+    <link rel="stylesheet" type="text/css" href="styles/memesStyle.css">
+    <link rel="icon" type="image/x-icon" href="src/mada.png">
+
+</head>
+<body dir="rtl">
+    <header>
+        <a id="homeButton" href="main.html">
+            <img src="src/homeB.png" alt="Home Button">
+        </a>
+        <h1>שחקו עם קדמן</h1>
+    </header>
+    <div class="content">
+        <main class="s">
+            <img id="playImg" src="src/play.jpg" usemap="#image-map">
+            <div id="area1" class="overlay"></div>
+            <map name="image-map">
+                <area shape="rect" coords="473,320,580,415" alt="Button1" href="#action1" onclick="triggerAction('קדמן')">
+				<area shape="rect" coords="830,630,930,700" alt="Button2" href="#action2" onclick="triggerAction('שירותים')">
+            </map>
+            <!-- Container to hold dynamic elements -->
+            <div id="dynamicContent"></div>
+        </main>
+    </div>
+    <footer>
+        <a href="quotes.html">Quotes</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&copy; 2024 Ran Durabch
+    </footer>
+
+    <script>
+        function triggerAction(word) {
+            let container = document.getElementById('dynamicContent');
+            let element = document.getElementById(word);
+            if (!element) {
+                element = document.createElement('div');
+                element.id = word;
+                element.innerHTML = word;
+                container.appendChild(element);
+            } else {
+                element.innerHTML += " " + word;
+            }
+        }
+    </script>
+</body>
+</html>
