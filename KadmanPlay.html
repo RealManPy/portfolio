@@ -4,7 +4,6 @@
     <title>שחקו עם קדמן</title>
     <link rel="stylesheet" type="text/css" href="styles/memesStyle.css">
     <link rel="icon" type="image/x-icon" href="src/mada.png">
-
 </head>
 <body dir="rtl">
     <header>
@@ -18,24 +17,37 @@
             <img id="playImg" src="src/play.jpg" usemap="#image-map">
             <div id="area1" class="overlay"></div>
             <map name="image-map">
-                <area shape="rect" coords="473,320,580,415" alt="Button1" href="#action1" onclick="triggerAction('קדמן')">
-				<area shape="rect" coords="830,630,930,700" alt="Button2" href="#action2" onclick="triggerAction('שירותים')">
+                <area shape="rect" coords="473,320,580,415" href="#action1" onclick="triggerAction('קדמן')">
+				
+				<!---last col--->
+				<area shape="rect" coords="840,220,950,310" href="#action1" onclick="triggerAction('אני רוצה')">
+				<area shape="rect" coords="840,330,942,414" href="#action1" onclick="triggerAction('אני לא רוצה')">
+				<area shape="rect" coords="838,432,938,513" href="#action1" onclick="triggerAction('עוד')">
+				<area shape="rect" coords="835,534,933,612" href="#action1" onclick="triggerAction('די')">
+				<area shape="rect" coords="830,630,930,700" href="#action1" onclick="triggerAction('שירותים')">
+				
+				<area shape="rect" coords="712,632,809,708" href="#action1" onclick="triggerAction('לבד')">
+				<area shape="rect" coords="592,632,692,712" href="#action1" onclick="triggerAction('יחד')">
+				
+				<area shape="rect" coords="230,640,335,715" href="#action1" onclick="triggerAction('לא נעים לי')">
+				<area shape="rect" coords="106,540,211,620" href="#action1" onclick="triggerAction('מפחד')">
+				<area shape="rect" coords="592,533,692,630" href="#action1" onclick="triggerAction('לשחק')">
+				
             </map>
-            <!-- Container to hold dynamic elements -->
             <div id="dynamicContent"></div>
         </main>
     </div>
     <footer>
-        <a href="quotes.html">Quotes</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&copy; 2024 Ran Durabch
+        <a href="quotes.html">Quotes</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&copy; 2024 Ran Durabch
     </footer>
 
     <script>
         function triggerAction(word) {
             let container = document.getElementById('dynamicContent');
-            let element = document.getElementById(word);
+            let element = document.getElementById('singleElement');
             if (!element) {
                 element = document.createElement('div');
-                element.id = word;
+                element.id = 'singleElement';
                 element.innerHTML = word;
                 container.appendChild(element);
             } else {
