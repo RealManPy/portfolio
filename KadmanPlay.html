@@ -98,7 +98,9 @@
         }
 		function deleteText(){
 			let element = document.getElementById('singleElement');
-			element.remove();
+			if (element){
+				element.remove();
+			}
 		}
     </script>
 </body>
