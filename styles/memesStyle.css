@@ -108,4 +108,57 @@ a:visited{
 #playImg{
 	width: 1000px;
 }
-	
+.trash-button {
+        display: inline-block;
+        width: 40px;
+        height: 40px;
+        background-color: rgb(91, 83, 255);
+        border: none;
+        border-radius: 5px;
+        position: relative;
+        cursor: pointer;
+        outline: none;
+    }
+
+    .trash-button::before, .trash-button::after {
+        content: '';
+        position: absolute;
+        background-color: white;
+        border-radius: 2px;
+    }
+
+    /* Bin Body */
+    .trash-button::before {
+        width: 20px;
+        height: 20px;
+        left: 50%;
+        bottom: 10px;
+        transform: translateX(-50%);
+    }
+
+    /* Bin Lid */
+    .trash-button::after {
+        width: 24px;
+        height: 5px;
+        left: 50%;
+        top: 8px;
+        transform: translateX(-50%);
+        border-radius: 0;
+    }
+
+    /* Bin Handle */
+    .trash-button span {
+        position: absolute;
+        width: 12px;
+        height: 3px;
+        background-color: white;
+        top: 3px;
+        left: 50%;
+        transform: translateX(-50%);
+        border-radius: 1px;
+    }
+
+.fixed-div {
+	text-align: center;
+	margin-top: auto;
+}

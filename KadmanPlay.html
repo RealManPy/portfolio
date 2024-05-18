@@ -74,6 +74,11 @@
             <div id="dynamicContent"></div>
         </main>
     </div>
+	<div class = "fixed-div">
+		<button class="trash-button" onclick="deleteText();">
+			<span></span>
+		</button>
+	</div>
     <footer>
         <a href="quotes.html">Quotes</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&copy; 2024 Ran Durabch
     </footer>
@@ -91,6 +96,10 @@
                 element.innerHTML += " " + word;
             }
         }
+		function deleteText(){
+			let element = document.getElementById('singleElement');
+			element.remove();
+		}
     </script>
 </body>
 </html>
